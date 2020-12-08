@@ -50,8 +50,7 @@ export function UserEditForm({
   actionsLoading,
   onHide,
 }) {
-  if(!user.password)
-    user.password="";
+ 
   const { enqueueSnackbar } = useSnackbar();
   // Getting curret state of users list from store (Redux)
   const { currentState, countriesState, departmentsState } = useSelector(
